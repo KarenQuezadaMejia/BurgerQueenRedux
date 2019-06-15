@@ -1,0 +1,13 @@
+#containerMenu{
+    background-color: white;
+    margin-top: 100px;
+}
+
+.BoxHeaderButton{
+    background-color: white;
+    border-radius: 15px;
+    color: #282c34;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+}

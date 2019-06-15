@@ -1,0 +1,28 @@
+
+.BoxHeader {
+  background-color: #282c34;
+  margin: 0;
+  padding: 0;
+}
+
+.BoxHeader_text{
+  color: white;
+  text-align: center;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
+.BoxHeaderLogo{
+  height: 120px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* .Header{
+  background-color: #282c34;
+  }
+  
+  .HeaderNav{
+    background-color: #282c34;
+    color: white;
+  } */

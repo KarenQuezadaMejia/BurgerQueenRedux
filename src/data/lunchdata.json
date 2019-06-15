@@ -1,0 +1,41 @@
+{"lunch": [
+    {
+        "item": "Hamburguesa Simple ",
+        "price": 1500
+    },
+
+    {
+        "item": "Hamburguesa Doble ",
+        "price": 2500
+    },
+
+    {
+        "item": "Papas Fritas ",
+        "price": 500
+    },
+    
+    {
+        "item": "Aros de Cebolla ",
+        "price": 500
+    },
+    
+    {
+        "item": "Agua 500ml ",
+        "price": 500
+    },
+    
+    {
+        "item": "Agua 750ml",
+        "price": 800
+    },
+    
+    {
+        "item": "Bebida ",
+        "price": 700
+    },
+    
+    {
+        "item": "Bebida ",
+        "price": 1000
+    }
+]}
