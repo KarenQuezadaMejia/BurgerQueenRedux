@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://KarenQuezadaMejia.github.io/Burguer-Redux/",
+  "homepage": "https://KarenQuezadaMejia.github.io/BurgerQueenRedux/",
   "dependencies": {
     "@material-ui/core": "^4.0.1",
     "babel-eslint": "^10.0.1",
