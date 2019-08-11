@@ -1,0 +1,12 @@
+*{
+    font-size: 25px;
+}
+
+#boxitem{
+    background-color: white;
+    display: inline;
+}
+#contentitems{
+    display: inline-block;
+    text-align: left;
+}

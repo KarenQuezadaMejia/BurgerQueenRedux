@@ -1,0 +1,45 @@
+.form-group{
+   margin:  0px;
+   padding: 0px;
+   margin-top: 15px;
+}
+.form-control{
+   border-top-style: outset !important;
+    border-bottom-style: inset !important;
+    font-size: 25px;
+}
+
+#containerMenu{
+    margin: 0px;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: black !important;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 11px system-ui;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+#send{
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #2b2929f9;
+}

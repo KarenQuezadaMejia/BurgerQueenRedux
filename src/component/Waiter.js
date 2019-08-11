@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-import './Waiter.css';
+import './css/Waiter.css';
 import Button from './Button';
 import Breakfast from './Breakfast';
 import Lunch from './Lunch';
 import {connect} from 'react-redux';
-import Client from './Client';
 
 class Waiter extends Component{
     constructor(props){
@@ -39,16 +38,12 @@ class Waiter extends Component{
     render(){
 
         return (
-            <div id="containerMenu">
-            
-             <Client/>
-             <div id = "dinerName"> 
-            {this.props.client.client}
-            </div>
+            <div>
             <div id="boxitem">
-            <Button rol = "Desayuno" customOnButtonClick ={this.BreakfastFunc}/>
-            <Button rol="Almuerzo" customOnButtonClick={this.LunchFunc}/>
-            
+            <Button rol = "Desayuno" customOnButtonClick ={this.BreakfastFunc} id="desayuno"/>
+            <Button rol="Almuerzo" customOnButtonClick={this.LunchFunc} id="almuerzo"/>
+            </div>
+            <div id="contentitems">
             {
                 this.state.showBreakfast &&
                 <Breakfast></Breakfast>
@@ -67,7 +62,6 @@ const mapStateToProps = (state)=>{
       ...state
     };
   }
-  
   export default connect(
     mapStateToProps
-  )(Waiter); 
+  )(Waiter);

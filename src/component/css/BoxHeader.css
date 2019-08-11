@@ -1,6 +1,6 @@
 
 .BoxHeader {
-  background-color: #282c34;
+  background-color: #0f1626;
   margin: 0;
   padding: 0;
 }
@@ -8,16 +8,25 @@
 .BoxHeader_text{
   color: white;
   text-align: center;
-  margin-left: 100px;
   margin-bottom: 100px;
 }
 
 .BoxHeaderLogo{
   height: 120px;
   margin-top: 10px;
-  margin-left: 10px;
+}
+#options{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  column-count: 2;
 }
 
+#contMenu{
+  margin-top: 30px;
+  margin: 0px;
+  padding: 0px;
+  column-count: 2;
+}
 /* .Header{
   background-color: #282c34;
   }

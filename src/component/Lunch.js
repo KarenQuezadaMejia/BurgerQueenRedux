@@ -12,15 +12,18 @@ class lunchmenu extends Component {
   render() {
     const menulunch = menu.lunch.map((product) => {
       return (
-        <Button rol={product.item + "" + product.price} customOnButtonClick={() => { this.props.nameProduct(menulunch) }} />
+        <div id="secondboxitem">
+        <Button rol={product.item + "" + product.price} customOnButtonClick={() => { this.props.nameProduct(menulunch) }} id="itemlunch"/>
+        </div>
       )
     })
     return (
-      <div id="secondboxitem">
+      <div id="boxit">
        {menulunch}
       </div>
 
     );
   }
 }
+
 export default (lunchmenu);

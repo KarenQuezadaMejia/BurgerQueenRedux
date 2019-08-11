@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
-import './BoxHeader.css';
+import './css/BoxHeader.css';
 import BoxHeaderLogo from '../logo.png';
 import Button from './Button';
 import Waiter from './Waiter';
 import Kitchen from './Kitchen';
+import {connect} from 'react-redux';
+import Client from './Client';
 
 class BoxHeader extends Component {
   constructor(props){
@@ -33,17 +35,22 @@ class BoxHeader extends Component {
   
   render () {
     return (
-      <div>
+      <article id="boxoption">
     <div className= "BoxHeader">
       <img src={BoxHeaderLogo} className = "BoxHeaderLogo" alt="logo"/>
       
     </div>
-    <div id="options">
+    <Client/>
+    <div id = "dinerName"> 
+      {this.props.client.client}
+      </div>
+      <div id="options">
+      
     <Button rol = "Meser@" customOnButtonClick ={this.WaiterFunc}/>
-      <Button rol = "Cocina"customOnButtonClick ={this.KitchenFunc}/>
+    <Button rol = "Cocina"customOnButtonClick ={this.KitchenFunc}/>
     </div>
-    <div id="containerMenu">
-    
+
+    <div id="contMenu">
       {
         this.state.showWaiter && 
         <Waiter></Waiter>
@@ -53,10 +60,17 @@ class BoxHeader extends Component {
         <Kitchen></Kitchen>
       }
     </div>
-    </div>
+    </article>
     
     );
   }
 }
+const mapStateToProps = (state)=>{
+  return {
+    ...state
+  };
+}
 
-export default (BoxHeader);
+export default connect(
+  mapStateToProps
+)(BoxHeader);
